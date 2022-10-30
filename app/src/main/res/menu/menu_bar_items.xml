@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/id_home_Fragment"
+        android:title="Inicio"
+        android:enabled="true"
+        android:icon="@drawable/home_select_file"/>
+
+    <item
+        android:id="@+id/id_service_Fragment"
+        android:title="Servicios"
+        android:enabled="true"
+        android:icon="@drawable/service_select_file"/>
+
+
+    <item
+        android:id="@+id/id_favorite_Fragment"
+        android:title="Favorito"
+        android:enabled="true"
+        android:icon="@drawable/favorite_select_file"/>
+
+    <item
+        android:id="@+id/id_collaborator_Fragment"
+        android:title="Colaborador"
+        android:enabled="true"
+        android:icon="@drawable/collaborator_select_file"/>
+</menu>

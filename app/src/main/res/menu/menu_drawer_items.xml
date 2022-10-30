@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item android:title="General" >
+            <menu>
+
+                <item
+                    android:id="@+id/id_promotions_Fragment"
+                    android:icon="@drawable/ic_discont"
+                    android:title="Promociones" />
+
+                <item
+                    android:id="@+id/id_help_Fragment"
+                    android:icon="@drawable/ic_help"
+                    android:title="Ayuda Y comentarios" />
+
+                <item
+                    android:id="@+id/id_settings_Fragment"
+                    android:icon="@drawable/ic_setting"
+                    android:title="Configuración" />
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="¿No tienes una cuenta?">
+            <menu>
+                <item
+                    android:id="@+id/id_logout_Fragment"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Registrarse" />
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="Versión">
+            <menu>
+                <item
+                    android:title="Version: 1.2 Beta"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

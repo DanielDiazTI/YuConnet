@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--  Colores de YuConect!  -->
+    <color name="LogoColor">#2980B9</color>
+    <color name="ColorStatusBar">#6BB0CD</color>
+    <color name="Background">#BFECFF</color>
+<!--    <color name="ColorToolbar">#5352ed</color>-->
+<!--    <color name="ColorText">#162534</color>-->
+<!--    <color name="ColorBackgroundServices">#54AFD5</color>-->
+    <color name="ColorHeader">#55D189</color>
+    <color name="ColorToolbar">#43afc0</color>
+    <color name="ColorText">#162534</color>
+    <color name="ColorBackgroundServices">#98D2DC</color>
+    <color name="ColorTextServices">#FFF</color>
+
+
+    <!--  Colores de Fondo de Titulos  -->
+    <color name="hospedaje">#55D189</color>
+    <color name="restaurante">#FC6866</color>
+    <color name="turismo">#AE8FF7</color>
+    <color name="gasolinera">#FFC000</color>
+    <color name="particulares">#009BD2</color>
+    <color name="abarrotes">#FD8D51</color>
+    <color name="salud">#4F97EF</color>
+    <color name="publicos">#97E077</color>
+
+    <!--  Colores de Fondo de Contenido-->
+    <color name="fondoHospedaje">#DBF9E4</color>
+    <color name="fondoRestaurante">#FFE9E7</color>
+    <color name="fondoTurismo">#E7DAFA</color>
+    <color name="fondoGasolinera">#FFF6DD</color>
+    <color name="fondoParticulares">#D1EAF9</color>
+    <color name="fondoAbarrotes">#FCE9DC</color>
+    <color name="fondoSalud">#D1EAF9</color>
+    <color name="fondoPublicos">#E2FAE9</color>
+
+    <color name="colorpromoionesTitle">#AE8FF7</color>
+
+</resources>

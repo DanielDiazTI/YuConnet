@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginVertical="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/HospedajeFoto"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="#efefefef" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/hospedaje"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HospedajeFoto">
+
+            <TextView
+                android:id="@+id/tvNombreEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/tipo1"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fondoHospedaje"
+            android:padding="1dp"
+            android:text="  Nombre:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <TextView
+            android:id="@+id/HospedajeNombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fondoHospedaje"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nombre"
+            tools:text="Nombre:" />
+
+        <TextView
+            android:id="@+id/Horario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="1dp"
+            android:text="  Horario:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HospedajeNombre" />
+
+        <TextView
+            android:id="@+id/HospedajeHorarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Horario"
+            tools:text="Horarios:" />
+
+
+
+
+        <TextView
+            android:id="@+id/precios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="1dp"
+            android:text="  Precios:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HospedajeHorarios" />
+
+        <TextView
+            android:id="@+id/HospedajePrecios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/precios"
+            tools:text="Precios:" />
+
+        <TextView
+            android:id="@+id/Dirección"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="1dp"
+            android:text="  Dirección:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HospedajePrecios" />
+
+        <TextView
+            android:id="@+id/HospedajeUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Dirección"
+            tools:text="Ubicación:" />
+
+        <TextView
+            android:id="@+id/Municipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="1dp"
+            android:text="  Municipio:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HospedajeUbicacion" />
+
+        <TextView
+            android:id="@+id/HospedajeMunicipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Municipio"
+            tools:text="Municipio:" />
+
+        <TextView
+            android:id="@+id/Contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="1dp"
+            android:text="  Contacto:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HospedajeMunicipio" />
+
+        <TextView
+            android:id="@+id/HospedajeContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Contacto"
+            tools:text="Contacto:" />
+
+        <TextView
+            android:id="@+id/Servicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="1dp"
+            android:text="  Tipo de Servicio:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HospedajeContacto" />
+
+        <TextView
+            android:id="@+id/HospedajeServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoHospedaje"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Servicio"
+            tools:text="Servicio:" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

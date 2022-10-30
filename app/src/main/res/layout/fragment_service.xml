@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ServiceFragment">
+
+    <!--Menu servicios-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorBackgroundServices">
+
+        <!-- LayoutHospedaje -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutHospedaje"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_hospedaje"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/LayoutRestaurante"
+           app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/LayoutTurismo">
+
+            <ImageView
+                android:id="@+id/ivHospedaje"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_hospedaje"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvHospedaje"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/poppins"
+                android:text="Hospedaje"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/ColorTextServices"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivHospedaje"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- LayoutRestaurante -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutRestaurante"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_restaurante"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LayoutHospedaje"
+            app:layout_constraintBottom_toTopOf="@+id/LayoutGasolinera">
+
+            <ImageView
+                android:id="@+id/ivRestaurante"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_restaurante"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvRestaurante"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/poppins"
+                android:text="Restaurante"
+                android:textSize="15dp"
+                android:textColor="@color/ColorTextServices"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivRestaurante"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- LayoutTurismo -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutTurismo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_turismo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutHospedaje"
+            app:layout_constraintEnd_toStartOf="@+id/LayoutGasolinera"
+            app:layout_constraintBottom_toTopOf="@+id/LayoutServiciosParticulares">
+
+            <ImageView
+                android:id="@+id/ivTurismo"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_turismo"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvTurismo"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/poppins"
+                android:text="Turismo"
+                android:textSize="15dp"
+                android:textColor="@color/ColorTextServices"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivTurismo"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- LayoutGasolinera -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutGasolinera"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_gasolinera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LayoutTurismo"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutRestaurante"
+            app:layout_constraintBottom_toTopOf="@+id/LayoutAbarrotes">
+
+            <ImageView
+                android:id="@+id/ivGasolinera"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_gasolinera"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvGasolinera"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/poppins"
+                android:text="Gasolinera"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/ColorTextServices"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivGasolinera"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- LayoutServiciosParticulares -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutServiciosParticulares"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_serviciosparticulares"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/LayoutAbarrotes"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutTurismo"
+            app:layout_constraintBottom_toTopOf="@+id/LayoutSalud">
+
+            <ImageView
+                android:id="@+id/ivServiciosParticulares"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_serviciosparticulares"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvServiciosParticulares"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Servicios particulares"
+                android:textSize="15dp"
+                android:textColor="@color/ColorTextServices"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivServiciosParticulares"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- LayoutAbarrotes -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutAbarrotes"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_abarrotes"
+
+            app:layout_constraintTop_toBottomOf="@+id/LayoutGasolinera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LayoutServiciosParticulares"
+            app:layout_constraintBottom_toTopOf="@+id/LayoutServiciosPublicos">
+
+            <ImageView
+                android:id="@+id/ivAbarrotes"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_abarrotes"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvAbarrotes"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/poppins"
+                android:text="Abarrotes"
+                android:textColor="@color/ColorTextServices"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAbarrotes"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- LayoutSalud -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutSalud"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_salud"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/LayoutServiciosPublicos"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutServiciosParticulares"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/ivSalud"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_doctor"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvSalud"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/poppins"
+                android:text="Salud"
+                android:textSize="15dp"
+                android:textColor="@color/ColorTextServices"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivSalud"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- LayoutServiciosPublicos -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutServiciosPublicos"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="18dp"
+            android:background="@drawable/radius_cardview_serviciospublico"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LayoutSalud"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutAbarrotes"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/ivServiciosPublicos"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_serviciospublicos"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvServiciosPublicos"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Servicios públicos"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/ColorTextServices"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivServiciosPublicos"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

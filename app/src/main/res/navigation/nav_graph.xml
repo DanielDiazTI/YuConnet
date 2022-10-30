@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/id_home_Fragment">
+    <fragment
+        android:id="@+id/id_home_Fragment"
+        android:name="com.example.yuconect.Fragments.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/id_service_Fragment"
+        android:name="com.example.yuconect.Fragments.ServiceFragment"
+        android:label="Servicios"
+        tools:layout="@layout/fragment_service" >
+        <action
+            android:id="@+id/action_id_service_Fragment_to_LayoutHospedaje"
+            app:destination="@id/LayoutHospedaje" />
+        <action
+            android:id="@+id/action_id_service_Fragment_to_restauranteFragment"
+            app:destination="@id/LayoutRestaurante" />
+        <action
+            android:id="@+id/action_id_service_Fragment_to_turismoFragment"
+            app:destination="@id/LayoutTurismo" />
+        <action
+            android:id="@+id/action_id_service_Fragment_to_LayoutGasolinera"
+            app:destination="@id/LayoutGasolinera" />
+        <action
+            android:id="@+id/action_id_service_Fragment_to_particularesFragment"
+            app:destination="@id/LayoutServiciosParticulares" />
+        <action
+            android:id="@+id/action_id_service_Fragment_to_abarrotesFragment"
+            app:destination="@id/LayoutAbarrotes" />
+        <action
+            android:id="@+id/action_id_service_Fragment_to_saludFragment"
+            app:destination="@id/LayoutSalud" />
+        <action
+            android:id="@+id/action_id_service_Fragment_to_publicoFragment"
+            app:destination="@id/LayoutServiciosPublicos" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_collaborator_Fragment"
+        android:name="com.example.yuconect.Fragments.CollaboratorFragment"
+        android:label="Colaborador"
+        tools:layout="@layout/fragment_collaborator" />
+    <fragment
+        android:id="@+id/id_favorite_Fragment"
+        android:name="com.example.yuconect.Fragments.FavoriteFragment"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/id_promotions_Fragment"
+        android:name="com.example.yuconect.Fragments.PromotionsFragment"
+        android:label="Promociones"
+        tools:layout="@layout/fragment_promotions" />
+    <fragment
+        android:id="@+id/id_help_Fragment"
+        android:name="com.example.yuconect.Fragments.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/id_settings_Fragment"
+        android:name="com.example.yuconect.Fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/id_logout_Fragment"
+        android:name="com.example.yuconect.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/LayoutHospedaje"
+        android:name="com.example.yuconect.Servicios.HospedajeFragment"
+        android:label="Hospedaje"
+        tools:layout="@layout/fragment_hospedaje" />
+    <fragment
+        android:id="@+id/LayoutRestaurante"
+        android:name="com.example.yuconect.Servicios.RestauranteFragment"
+        android:label="Restaurante"
+        tools:layout="@layout/fragment_restaurante" />
+    <fragment
+        android:id="@+id/LayoutTurismo"
+        android:name="com.example.yuconect.Servicios.TurismoFragment"
+        android:label="Turismo"
+        tools:layout="@layout/fragment_turismo" />
+    <fragment
+        android:id="@+id/LayoutGasolinera"
+        android:name="com.example.yuconect.Servicios.GasolineraFragment"
+        android:label="Gasolinera"
+        tools:layout="@layout/fragment_gasolinera" />
+    <fragment
+        android:id="@+id/LayoutServiciosParticulares"
+        android:name="com.example.yuconect.Servicios.ParticularesFragment"
+        android:label="Servicios Particulares"
+        tools:layout="@layout/fragment_particulares" />
+    <fragment
+        android:id="@+id/LayoutAbarrotes"
+        android:name="com.example.yuconect.Servicios.AbarrotesFragment"
+        android:label="Abarrotes"
+        tools:layout="@layout/fragment_abarrotes" />
+    <fragment
+        android:id="@+id/LayoutSalud"
+        android:name="com.example.yuconect.Servicios.SaludFragment"
+        android:label="Salud"
+        tools:layout="@layout/fragment_salud" />
+    <fragment
+        android:id="@+id/LayoutServiciosPublicos"
+        android:name="com.example.yuconect.Servicios.PublicoFragment"
+        android:label="Servicio Público"
+        tools:layout="@layout/fragment_publico" />
+</navigation>
